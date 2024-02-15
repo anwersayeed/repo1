@@ -1,0 +1,13 @@
+name: Simple Echo Workflow
+
+on:
+  schedule:
+    - cron: '*/2 * * * *'
+
+jobs:
+  echo-job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Echo a Message
+      run: echo "Hello, GitHub Actions!"
